@@ -12,7 +12,8 @@ function qrCodeGenerator(){
         document.querySelector(".down").style.display = "block";
         qrBox.innerText = "";
         new QRCode(qrBox, {
-            text: inp.value
+            text: inp.value,
+            colorLight: "#7c7c7c33"
         });
     }
 }
